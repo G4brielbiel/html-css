@@ -37,9 +37,11 @@ header > h1 {
 }
 
 header > p {
+    font-family: var(--font1);
     color: white;
     text-align: center;
-    padding: 5px 0px 60px 0px;
+    padding-bottom: 50px;
+    font-size: 1em;
 }
 
 a {
@@ -59,11 +61,25 @@ a:hover {
 .imagem {
     color: white;
     background-color: rgb(49, 49, 49);
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.562);
 }
 
 section.imagem > p {
     width: 400px;
-    background-color: rgb(22, 22, 22);
+    background-color: rgba(22, 22, 22, 0.788);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
 }
 
 section {
@@ -75,11 +91,17 @@ section {
     font-size: 3.5vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
-    font-size: 1.2em;
-    font-weight: lighter;
+}
+
+footer > p {
+    font-family: var(--font1);
 }
