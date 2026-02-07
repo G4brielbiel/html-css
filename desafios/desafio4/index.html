@@ -12,6 +12,9 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
             font-weight: bolder;
         }
 
@@ -21,19 +24,22 @@
             margin: auto;
         }
 
+        tfoot {
+            border: 1px solid black;
+        }
+
         td {
             padding: 4px;
             border: 1px solid black;
             text-align: center;
         }
 
-        .titulos {
+        th {
             font-weight: bolder;
+            border: 1px solid black;
         }
 
-        .corpo {
-            font-weight: bolder;
-        }
+
         
     </style>
 </head>
@@ -44,14 +50,21 @@
         <caption>Filmes Favoritos</caption>
         <thead>
             <tr>
-                <td class="titulos" >Grupo</td>
-                <td class="titulos">Nomes</td>
-                <td class="titulos" colspan="3">Filmes</td>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</td>
+                <th scope="rowgroup" colspan="3">Filmes</th>
             </tr>
         </thead>
 
+        <tfoot>
+            <tr>
+                <th colspan="4">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
+
         <tr>
-            <td class="corpo" rowspan="3">Mulheres</td>
+            <th scope="colgroup" rowspan="3">Mulheres</th>
             <td>Ana Maria Santos</td>
             <td>Alien</td>
             <td>Rambo</td>
@@ -73,7 +86,7 @@
         </tr>
 
         <tr>
-            <td class="corpo" rowspan="3">Homens</td>
+            <th scope="colgroup" rowspan="3">Homens</th>
             <td>Bruno Mendonça</td>
             <td>intocáveis</td>
             <td>Amnésia</td>
