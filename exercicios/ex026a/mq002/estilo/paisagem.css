@@ -3,5 +3,5 @@
 /*APARELHO DEITADO (landscape)*/
 
 body {
-    background-color: rgb(13, 255, 0);
+    background: url(../imagens/cev-landscape.jpg) left bottom no-repeat;
 }
